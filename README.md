@@ -2,7 +2,7 @@
 
 Submitted by: **Melineh Mansour Cheharmohali**
 
-**Name of your app** is an android app that recreates a simple version of the popular word game [Wordle](https://www.nytimes.com/games/wordle/index.html). 
+**Main Wordle** is an android app that recreates a simple version of the popular word game [Wordle](https://www.nytimes.com/games/wordle/index.html). 
 
 Time spent: **20** hours spent in total
 
