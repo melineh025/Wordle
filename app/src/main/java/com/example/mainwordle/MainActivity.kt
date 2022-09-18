@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
         var showguess2 = findViewById<TextView>(R.id.guess2);
         var showguess3 = findViewById<TextView>(R.id.guess3);
 
-        var showanswer = findViewById<TextView>(R.id.answer)
-        showanswer.setText(answer)
-        showanswer.visibility = View.VISIBLE
+        //var showanswer = findViewById<TextView>(R.id.answer)
+       // showanswer.setText(answer)
+       // showanswer.visibility = View.VISIBLE
         var showguess1answer = findViewById<TextView>(R.id.guess1string)
         var showguess2answer = findViewById<TextView>(R.id.guess2string) //Guess#2 userinput
         var showguess3answer = findViewById<TextView>(R.id.guess3string) //Guess#3 userinput
@@ -51,6 +51,10 @@ class MainActivity : AppCompatActivity() {
             count++
             if(count == 1) {
                 var guess1X = checkGuess(inputString, answer)
+                if(guess1X == "OOOO") {
+                    correct = 1
+                    Toast.makeText(this, "You Win!", Toast.LENGTH_SHORT).show()
+                }
                 showguess1.visibility = View.VISIBLE //Guess #1
                 showguess1answer.setText(inputString) // Guess #1 string
                 showguess1answer.visibility = View.VISIBLE
@@ -60,7 +64,12 @@ class MainActivity : AppCompatActivity() {
                 showg1.visibility = View.VISIBLE;
             }
             else if(count == 2) {
+
                 var guess2X = checkGuess(inputString, answer)
+                if(guess2X == "OOOO") {
+                    correct = 1
+                    Toast.makeText(this, "You Win!", Toast.LENGTH_SHORT).show()
+                }
                 showguess2.visibility = View.VISIBLE
                 showguess2answer.setText(inputString)
                 showguess2answer.visibility = View.VISIBLE
@@ -70,7 +79,18 @@ class MainActivity : AppCompatActivity() {
                 showg2.visibility = View.VISIBLE
             }
             else if(count == 3) {
+
                 var guess3X = checkGuess(inputString, answer)
+                if(guess3X == "OOOO") {
+                    correct = 1
+                    Toast.makeText(this, "You Win!", Toast.LENGTH_SHORT).show()
+                }
+                else {
+                    Toast.makeText(this, "You Lose!", Toast.LENGTH_SHORT).show()
+                    var showanswer = findViewById<TextView>(R.id.answer)
+                    showanswer.setText(answer)
+                    showanswer.visibility = View.VISIBLE
+                }
                 showguess3.visibility = View.VISIBLE
                 showguess3answer.setText(inputString)
                 showguess3answer.visibility = View.VISIBLE
@@ -80,6 +100,8 @@ class MainActivity : AppCompatActivity() {
                 showg3.visibility = View.VISIBLE
 
             }
+
+
         }
 
 
