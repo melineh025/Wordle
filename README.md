@@ -11,7 +11,7 @@ Time spent: **20** hours spent in total
 The following **required** functionality is completed:
 
 - [X ] **User has 3 chances to guess a random 4 letter word**
-- [X ] **After 3 guesses, user should no longer be able to submit another guess**
+- [X ] **After 3 guesses, user should no longer be able to submit another guess (Toast displayed)**
 - [X ] **After each guess, user sees the "correctness" of the guess**
 - [X ] **After all guesses are taken, user can see the target word displayed**
 
@@ -35,7 +35,7 @@ Here's a walkthrough of implemented user stories:
 <img src='https://media.giphy.com/media/aRvT6XYfyKnwRElO5K/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with giphy
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -44,10 +44,13 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+Challenges:
+-Working with getting new EditText messages
+- Creating visibility tags
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Melineh Mansour Cheharmohali]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
